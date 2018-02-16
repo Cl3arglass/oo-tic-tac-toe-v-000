@@ -113,7 +113,7 @@ class TicTacToe
    end
   end
 
-  def play(board)
+  def play
   #   until the game is over
   #   take turns
   # end
@@ -124,8 +124,8 @@ class TicTacToe
   #   tell the players it has been a draw
   # end
   # input = gets
-  until over?(board)
-    turn(board)
+  until over?
+    turn
   end
 
   if won?(board)
