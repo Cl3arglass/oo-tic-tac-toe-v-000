@@ -93,18 +93,18 @@ class TicTacToe
    false
   end
 
-  def full?(board)
-    board.all? do |position|
+  def full?
+    @board.all? do |position|
      position != " "
    end
   end
 
-  def draw?(board)
-    !won?(board) && full?(board)
+  def draw?
+    !won? && full?
   end
 
-  def over?(board)
-    draw?(board) || full?(board) || won?(board)
+  def over?
+    draw? || full? || won?
   end
 
   def winner(board)
